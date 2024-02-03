@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
+
+:root {
+
+    --ff: 'DM Sans', sans-serif;
+
+    --col-Soft: hsl(10, 79%, 65%);
+    --col-Cyan: hsl(186, 34%, 60%);
+
+
+    --col-DarkBrown: hsl(25, 47%, 15%);
+    --col-MediumBrown: hsl(28, 10%, 53%);
+    --col-Cream: hsl(27, 66%, 92%);
+    --col-VeryPaleOrange: hsl(33, 100%, 98%);
+
+    --fs-normal: 18px;
+
+    --fw-normal:400;
+    --fw-bold:700;
+
+    --raduis: 1rem;
+
+    --fs-sm: 13px;
+    --fs-lg: 11px;
+    --fs-hg: 32px;
+
+}
+
+* {
+    margin:0;
+}
+
+body {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--col-Cream);
+    font-family: var(--ff);
+}
+
+.card {
+    width: 400px;
+}
+
+.card__balance {
+    color: var(--col-Cream);
+    display: flex;
+    flex-direction: row;
+    background: var(--col-Soft);
+    padding: 20px;
+    border-radius: var(--raduis);
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__balance-logo img {
+    width: 50px;
+}
+
+.card__balance-title-amount {
+    font-size: 18px;
+    font-weight: var(--fw-bold);;
+}
+
+.card__balance-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__chart {
+    background: var(--col-VeryPaleOrange);
+    padding: 20px;
+    width: 100%;
+    border-radius: var(--raduis);
+    
+    color: var(--col-DarkBrown);
+    color: var(--col-MediumBrown);
+    margin:20px 0;
+
+    font-size: var(--fs-sm);
+
+}
+
+.card__chart-summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__chart-summary-amounts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card__chart-title {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
+    color: var(--col-DarkBrown);
+    margin-bottom: 20px;
+}
+
+.card__chart-summary-amounts-total {
+    font-size: var(--fs-hg);
+    font-weight: var(--fw-bold);
+    color: var(--col-DarkBrown);
+}
+
+.card__chart-chart-bar {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+}
+
+.card__chart-chart-bar-bar {
+    background: var(--col-Soft);
+    border-radius: 5px;;
+    width: 40px;
+    
+    
+}
+
+.card__chart-chart-bar-bar:hover {
+    background: var(--col-Cyan);
+    cursor: pointer;
+}
+
+.card__chart-chart {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+hr {
+    margin:2rem 0;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid var(--col-Cream);
+    padding: 0;
+}
